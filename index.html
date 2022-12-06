@@ -124,65 +124,76 @@
             </div>
         </article>
 
-        <section id="contact" <h2>Contact us:</h2>
-
-            <form id="contact form" name="contact form">
+        <h2>Contact us:</h2>
+       
+        <section id="contact"
+       
+        <h2>Contact us:</h2>
+          
+        <form id="contact form" name="contactForm" method="post"
+            data-netlify="true">
 
                 <fieldset>
                     <legend>contact form</legend>
+                    <div id="formElements">
 
-                    <!--Name-->
-                    <label for="name">Name (required)</label>
-                    <input type="text" id="name" name="name" required>
-                    <br>
-                    <br>
-                    <!--Email-->
-                    <label for="email">Email (required)</label>
-                    <input type="email" id="email" name="email" required>
-                    <br>
-                    <br>
-                    <!--Phone-->
-                    <label for="Phone">phone (optional)</label>
-                    <input type="tel" id="phone" name="phone">
-                    <br>
-                    <br>
-                    <!--phone type-->
-                    <label for="phonetype">phone Type (optional)</label>
-                    <select id="phonetype" name="phonetype">
-                        <option value="" selected> select phone type</option>
-                        <option value="Mobile">Mobile</option>
-                        <option value="work">work</option>
-                        <option value="Home">Home</option>
-                    </select>
-                    <br>
-                    <br>
-                    <!--Message-->
-                    <label for="message">Message (optional)</label>
-                    <textarea id="message" name="message" rows="8"></textarea>
+                        <!--Name-->
+                        <label for="name">Name (required)</label>
+                        <input type="text" id="name" name="name" placeholder="name" required>
+                        <br>
+                        <br>
+                        <!--Email-->
+                        <label for="email">Email (required)</label>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                        <br>
+                        <br>
+                        <!--Phone-->
+                        <label for="Phone">phone (optional)</label>
+                        <input type="tel" id="phone" name="phone" placeholder="XXX-XXX-XXXX">
+                        <br>
+                        <br>
+                        <!--phone type-->
+                        <label for="phonetype">phone Type (optional)</label>
+                        <select id="phonetype" name="phonetype">
+                            <option value="" selected> select phone type</option>
+                            <option value="Mobile">Mobile</option>
+                            <option value="work">work</option>
+                            <option value="Home">Home</option>
+                        </select>
+                        <br>
+                        <br>
+                        <!--Message-->
+                        <label for="message">Message (optional)</label>
+                        <textarea id="message" name="message" placeholder="Type here" rows="8"></textarea>
 
-                    <!--Reply-->
-                    <fieldset>
-                        <legend> Would you like a reply?</legend>
+                        <!--Reply-->
+                        <fieldset>
+                            <legend> Would you like a reply?</legend>
 
-                        <ul>
-                            <li>
-                                <input type="radio" id="message-yes" name="reply">
-                                <label for="message-yes">Yes a reply would be nice.</label>
+                            <ul>
+                                <li>
+                                    <input type="radio" id="message-yes" name="reply">
+                                    <label for="message-yes">Yes a reply would be nice.</label>
 
-                            </li>
-                            <li>
-                                <input type="radio" id="message-yes" name="reply">
-                                <label for="message-no">
-                                    No, thanks.
-                                </label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="message-no" name="reply" checked>
+                                    <label for="message-no">
+                                        No, thanks.
+                                    </label>
 
-                            </li>
+                                </li>
 
-                        </ul>
+                            </ul>
 
-                    </fieldset>
+                        </fieldset>
+                        <!--Submit-->
+                        <button type="submit">send</button>
 
 
+
+                    </div>
+                </fieldset>
             </form>
 
 
