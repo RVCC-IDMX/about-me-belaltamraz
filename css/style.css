@@ -2,11 +2,13 @@ h1 {
     font-family:"Bebas Neue";
     color: rgb(62, 186, 186);
     background-color: #fdfdfd;
+    font-size: 3cm;
 }
 
 body {
     background-color: #4a4141;
-
+    text-align: center;
+    margin-bottom:auto;
 }
 
 #hobbies {
@@ -15,6 +17,7 @@ body {
     align-items: center;
     font-size: larger;
     color: aquamarine;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 @media screen and (min-width: 60em) {
@@ -36,6 +39,9 @@ body {
 #lit div{
     max-width:100%;
     columns: 40rem;
+    color: aquamarine;
+    font-family: 'Courier New', Courier, monospace;
+
 }
 @media screen and (min-width: 100em){
     #gallery{
@@ -44,7 +50,7 @@ grid-template-columns: 1fr 1fr 1fr
     }
 }
 
-#lit div:nth-child(1)::first-letter{
+#lit div:first-child(1)::first-letter{
     display: block;
     float: left;
     font-size: 300%;
@@ -52,4 +58,34 @@ grid-template-columns: 1fr 1fr 1fr
     margin-left:auto;
     margin-right:auto;
 
+}
+
+#photoGallery{
+    color: aquamarine; 
+}
+
+footer{
+    color: aquamarine;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2{
+    font-family:"Bebas Neue";
+    text-align: center;
+    font-size: 3em;
+    background-color: darkmagenta;
+    color: bisque;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+
+}
+
+#Myhobbies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: larger;
+    color: aquamarine;
+    font-family: 'Courier New', Courier, monospace;
 }

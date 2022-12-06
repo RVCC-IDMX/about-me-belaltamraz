@@ -17,7 +17,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@600&display=swap"
+        rel="stylesheet">
 
 </head>
 
@@ -28,7 +29,7 @@
 
         <img src="img/logo-96X96.svg">
 
-        <h1> Web Dev 1</h1>
+        <h1> ABOUT ME</h1>
 
     </header>
 
@@ -96,7 +97,6 @@
 
 
         </section>
-
         <h2>My hobbies</h2>
 
         <ul>
@@ -134,20 +134,53 @@
                     <!--Name-->
                     <label for="name">Name (required)</label>
                     <input type="text" id="name" name="name" required>
-
+                    <br>
+                    <br>
                     <!--Email-->
                     <label for="email">Email (required)</label>
                     <input type="email" id="email" name="email" required>
-
+                    <br>
+                    <br>
                     <!--Phone-->
-                    <label for="Phone">phone (required)</label>
-                    <input type="phone" id="phone" name="phone">
-
+                    <label for="Phone">phone (optional)</label>
+                    <input type="tel" id="phone" name="phone">
+                    <br>
+                    <br>
                     <!--phone type-->
-                    <label for="phonetype">Email (required)</label>
-                    <input type="email" id="email" name="email" required>
+                    <label for="phonetype">phone Type (optional)</label>
+                    <select id="phonetype" name="phonetype">
+                        <option value="" selected> select phone type</option>
+                        <option value="Mobile">Mobile</option>
+                        <option value="work">work</option>
+                        <option value="Home">Home</option>
+                    </select>
+                    <br>
+                    <br>
+                    <!--Message-->
+                    <label for="message">Message (optional)</label>
+                    <textarea id="message" name="message" rows="8"></textarea>
 
-                </fieldset>
+                    <!--Reply-->
+                    <fieldset>
+                        <legend> Would you like a reply?</legend>
+
+                        <ul>
+                            <li>
+                                <input type="radio" id="message-yes" name="reply">
+                                <label for="message-yes">Yes a reply would be nice.</label>
+
+                            </li>
+                            <li>
+                                <input type="radio" id="message-yes" name="reply">
+                                <label for="message-no">
+                                    No, thanks.
+                                </label>
+
+                            </li>
+
+                        </ul>
+
+                    </fieldset>
 
 
             </form>
