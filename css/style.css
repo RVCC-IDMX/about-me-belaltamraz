@@ -109,4 +109,7 @@ h2 {
 
 }
 
-#form
+#formElements{
+display: grid;
+
+}
