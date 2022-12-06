@@ -1,11 +1,55 @@
 h1 {
-    font-family:"Roboto";
+    font-family:"Bebas Neue";
     color: rgb(62, 186, 186);
-    background-color: #0b22d4;
-} 
+    background-color: #fdfdfd;
+}
 
 body {
-    background-color: #eb8d00;
+    background-color: #4a4141;
 
+}
+
+#hobbies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: larger;
+    color: aquamarine;
+}
+
+@media screen and (min-width: 60em) {
+
+    figure {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    figcaption {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        margin-left: 1rem;
+    }
+}
+
+#lit div{
+    max-width:100%;
+    columns: 40rem;
+}
+@media screen and (min-width: 100em){
+    #gallery{
+        display: grid;
+grid-template-columns: 1fr 1fr 1fr
+    }
+}
+
+#lit div:nth-child(1)::first-letter{
+    display: block;
+    float: left;
+    font-size: 300%;
+    color: aquamarine;
+    margin-left:auto;
+    margin-right:auto;
 
 }
