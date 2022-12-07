@@ -54,14 +54,14 @@ body {
     }
 }
 
-#lit div:first-child(1)::first-letter {
+#lit div:first-of-type::first-letter {
     display: block;
     float: left;
     font-size: 300%;
     color: aquamarine;
     margin-left: auto;
     margin-right: auto;
-
+    border: 3px;color: aquamarine;
 }
 
 #photoGallery {
@@ -125,3 +125,4 @@ display: grid;
     max-width: 100%;
     border-radius: 0.5em;
 }
+ 
