@@ -60,7 +60,7 @@ figcaption {
     font-family: "Bebas Neue";
     color: rgb(62, 186, 186);
     font-size: x-large;
-    border: 25px
+    border: 5px solid;
 }
 
 #gallery {
