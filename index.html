@@ -19,19 +19,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@600&display=swap"
         rel="stylesheet">
-
+        <link rel="stylesheet" href="css/nav.css">
 </head>
 
 <body>
 
     <!-- header is where the site title and branding goes -->
     <header>
-
-        <img src="img/logo-96X96.svg">
-
-        <h1> ABOUT ME</h1>
-
-    </header>
+    <nav class="navbar">
+        <div class="logo"> 
+        <img src="img/logo-96X96.svg"
+        class="log-img"
+        alt="Blue origami logo"
+        />
+        <h1>ABOUT ME</h1>
+        </div> 
+        <div class="navbar-links"
+          <ul>
+          <li><a href="#bio" class="nav-links">Bio</a></li>
+          <li><a href="#photogallery" class="nav-links">Photo Gallery</a></li>
+          <li><a href="#lit" class="nav-links">Blog</a></li>
+          <li><a href="#contact" class="nav-links">Contact me</a></li>
+          </ul>
+        </div>
+    </nav>
+   </header>
 
     <!-- where all of our main content goes -->
     <main>
@@ -39,31 +51,16 @@
         <section id="hero">
 
             <img src="img/avataaars.png" alt=" Just a cowboy eith some overalls on.">
-
             <p>
                 Belal Tamraz<br>
                 Franklin, Nj
             </p>
 
         </section>
-        <section>
-            <h2> A short video:</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/VPHQ_zGBbEk"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-
-
-
-
-
-
-
-
-        </section>
-
-        <section id="hobbies">
-
+         
+        <h2>Biography: </h2>
+        <section id="bio">
+            
 
             <p> I want to be...</p>
 
@@ -73,12 +70,18 @@
                 <li>A rich man</li>
                 <li>start my own company</li>
             </ul>
+            <h2>My hobbies</h2>
+
+        <ul>
+            <li> Watching the cowboys</li>
+            <li> Watching all sports</li>
+            <li> playing basketball</li>
+            <li> Time with family </li>
+        </ul>
 
         </section>
-
-        <section>
-
-            <h2>Photo Gallery</h2>
+        <h2>Photo Gallery</h2>
+        <section id="photogallery"
             <hr>
             <figure>
                 <img src="img/cowboys.jpg" alt="">
@@ -94,17 +97,24 @@
                 <img src="img/World-Cup (1).jpg" alt="">
                 <figcaption> Soccer</figcaption>
             </figure>
-
+            <section>
+                <h2> A short video:</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/VPHQ_zGBbEk"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+    
+    
+    
+    
+    
+    
+    
+    
+            </section>
 
         </section>
-        <h2>My hobbies</h2>
-
-        <ul>
-            <li> Watching the cowboys</li>
-            <li> Watching all sports</li>
-            <li> playing basketball</li>
-            <li> Time with family </li>
-        </ul>
+        
 
         <article id="lit">
             <h2>The life of smauel Johnson</h2>

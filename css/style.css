@@ -11,7 +11,7 @@ body {
     margin-bottom: auto;
 }
 
-#hobbies {
+#bio{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -69,8 +69,13 @@ body {
 }
 
 footer {
-    color: aquamarine;
-    font-family: 'Courier New', Courier, monospace;
+    margin-top: 10em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    color: bisque;
+    background-color:darkmagenta;
+    padding-top: 1em;
+    padding-bottom: 1em;   
 
 }
 
@@ -86,7 +91,7 @@ h2 {
 
 }
 
-#Myhobbies {
+#Biography{
     display: flex;
     flex-direction: column;
     align-items: center;
