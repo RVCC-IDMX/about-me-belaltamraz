@@ -11,7 +11,7 @@
 h1 {
     font-family: "Bebas Neue";
     color: rgb(62, 186, 186);
-    background-color: #fdfdfd;
+    background-color: white;
     font-size: 3cm;
 }
 
@@ -30,8 +30,8 @@ body {
 #hero img {
     margin-left: auto;
     margin-right: auto;
-
-
+   border-radius: 2em;
+   max-width: 100%;
 }
 
 #bio {
@@ -58,9 +58,10 @@ figcaption {
 
 #contact {
     font-family: "Bebas Neue";
-    color: rgb(62, 186, 186);
+    color: rgb(3, 53, 3);
     font-size: x-large;
     border: 5px solid;
+    background-color: darkgray;
 }
 
 #gallery {
@@ -87,8 +88,8 @@ h2 {
     font-family: "Bebas Neue";
     text-align: center;
     font-size: 3em;
-    background-color: darkmagenta;
-    color: bisque;
+    background-color: aquamarine;
+    color: rgb(3, 48, 3);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -122,8 +123,8 @@ footer {
     margin-top: 10em;
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
-    color: bisque;
-    background-color: darkmagenta;
+    color: rgb(3, 40, 3);
+    background-color:darkgray;
     padding-top: 1em;
     padding-bottom: 1em;
 

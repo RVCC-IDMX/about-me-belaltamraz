@@ -1,5 +1,5 @@
 /* make scrolling smooth */
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -7,22 +7,22 @@ html{
  get rid of padding & sizing on body so
  header is at top
 */
-body{
-box-sizing: border-box;
-padding: 0;
-margin: 0;
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 
 }
 
 /* add some padding back to rest of page */
-main{
+main {
     padding: 2vw;
 }
 
 /* navbar */
-.navbar{
-    background-color:burlywood ;
-    color: aquamarine;
+.navbar {
+    background-color: aquamarine;
+    color: gray;
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
@@ -31,25 +31,27 @@ main{
 
 
 /* logo */
-.logo{
+.logo {
     display: flex;
     align-items: center;
 }
-.logo img{
-height: 6vw;
-width: 6vw;
+
+.logo img {
+    height: 6vw;
+    width: 6vw;
 
 }
-.logo h1{
+
+.logo h1 {
     font-size: 1.2em;
 }
 
 
 /* navigation list */
-.navbar-links li{
- list-style: none;  
- display: block; 
- padding: 0.5em 0;
+.navbar-links li {
+    list-style: none;
+    display: block;
+    padding: 0.5em 0;
 }
 
 
@@ -57,22 +59,21 @@ width: 6vw;
  style all a tags in header 
  and then on hover
 */
-.navbar-links a{
-color: aquamarine;
-background-attachment:burlywood ;
-font-size: 2.5rem;
-padding: 1rem 1.25rem;
-letter-spacing: 2px;
-text-decoration: none;
-display: inline-block;
+.navbar-links a {
+    color: rgb(2, 37, 2);
+    background-attachment: burlywood;
+    font-size: 2.5rem;
+    padding: 1rem 1.25rem;
+    letter-spacing: 2px;
+    text-decoration: none;
+    display: inline-block;
 }
 
-.navbar-links a:hover
-.navbar-links a:focus{
-color: burlywood;
-background-color: aquamarine;
-border-radius: 10px;
-outline: none;
+.navbar-links a:hover .navbar-links a:focus {
+    color: burlywood;
+    background-color: aquamarine;
+    border-radius: 10px;
+    outline: none;
 }
 
 /* 
@@ -81,13 +82,109 @@ min-width set to width of nav elements
 such that no text wraps 
 */
 @media screen and (min-width: 60rem) {
-    .navbar ul{
-        display: flex; 
+    .navbar ul {
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
-    .navbar{
+
+    .navbar {
         flex-direction: row;
         justify-content: space-between;
     }
+}
+
+/*positioning Hamburger icon*/
+.nav_toggle {
+    position: absolute;
+    cursor: pointer;
+    margin: 0rem 1rem;
+}
+
+.close {
+    display: none;
+
+}
+
+.menu {
+    margin-top: 0.2rem;
+}
+
+.nav_checkbox {
+    display: none;
+}
+
+.nav_menu {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    margin: 1rem;
+}
+
+.nav_menu li {
+    list-style: none;
+    display: none;
+}
+
+.nav_menu :first-child {
+    margin-right: auto;
+    display: block;
+}
+
+.nav_menu a {
+    text-decoration: none;
+    color: rgb(3, 58, 3);
+    font-size: 1.2rem;
+}
+
+.nav img {
+    width: 1.5rem;
+    fill: aliceblue;
+}
+
+#nav_checkbox:checked ul.navbar-links li {
+    display: block;
+}
+
+#nav_checkbox:checked label.nav_toggle.close {
+    display: block;
+}
+
+#nav_checkbox:checked label.nav_toggle.menu {
+    display: menu;
+}
+
+.navbar-links {
+    display: none;
+}
+
+#nav_checkbox:checked .navbar-links {
+    display: block;
+}
+
+
+@media screen and (min-width:60rem) {
+
+    .nav,
+    .nav_toggle,
+    .nav_menu {
+        flex-direction: row;
+        background-color: whitesmoke;
+    }
+
+    li {
+        display: block;
+    }
+
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navbar ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
 }
