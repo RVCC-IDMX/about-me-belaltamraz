@@ -14,6 +14,13 @@ body {
 
 }
 
+.navbar-links a:hover,
+.navbar-links a:focus{
+filter: invert(1);
+
+}
+
+
 /* add some padding back to rest of page */
 main {
     padding: 2vw;
@@ -134,7 +141,7 @@ such that no text wraps
 
 .nav_menu a {
     text-decoration: none;
-    color: rgb(3, 58, 3);
+    color: whitesmoke;
     font-size: 1.2rem;
 }
 
@@ -143,15 +150,15 @@ such that no text wraps
     fill: aliceblue;
 }
 
-#nav_checkbox:checked ul.navbar-links li {
+#nav_checkbox:checked ~ ul.navbar-links li {
     display: block;
 }
 
-#nav_checkbox:checked label.nav_toggle.close {
+#nav_checkbox:checked ~ label.nav_toggle.close {
     display: block;
 }
 
-#nav_checkbox:checked label.nav_toggle.menu {
+#nav_checkbox:checked ~ label.nav_toggle.menu {
     display: menu;
 }
 
@@ -159,7 +166,7 @@ such that no text wraps
     display: none;
 }
 
-#nav_checkbox:checked .navbar-links {
+#nav_checkbox:checked ~ .navbar-links {
     display: block;
 }
 
@@ -169,7 +176,7 @@ such that no text wraps
     .nav,
     .nav_toggle,
     .nav_menu {
-        flex-direction: row;
+        flex-direction:row;
         background-color: whitesmoke;
     }
 
@@ -185,6 +192,14 @@ such that no text wraps
     .navbar ul {
         display: flex;
         justify-content: space-between;
+    }
+
+    .nav_toggle {
+        display:none;
+    }
+
+    .navbar-links {
+        display:block;
     }
 
 }
