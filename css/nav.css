@@ -115,6 +115,7 @@ such that no text wraps
     position: absolute;
     cursor: pointer;
     margin: 0rem 1rem;
+    align-items: right;
 }
 
 .close {
