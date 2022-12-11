@@ -51,14 +51,17 @@ body {
 figcaption {
     color: aquamarine;
     font-family: 'Montserrat', sans-serif;
+    border: 5px solid;
+    background-color:darkgray;
 }
 
 #lit div {
     max-width: 100%;
     columns: 40rem;
-    color: aquamarine;
+    color: black;
     font-family: 'Courier New', Courier, monospace;
-
+    border: 5px solid;
+    background-color:aquamarine;
 }
 
 #contact {
@@ -80,12 +83,11 @@ figcaption {
     display: block;
     float: left;
     font-size: 300%;
-    color: aquamarine;
+    color: black;
     margin-left: 0.5ex;
     margin-right: 0.5ex;
     border: 3px;
-    color: aquamarine;
-
+    color:black;
 }
 
 
@@ -123,7 +125,7 @@ h2 {
     margin-right: auto;
     max-width: 100%;
     border-radius: 0.5em;
-
+    font-size: 30px;
 }
 
 footer {
