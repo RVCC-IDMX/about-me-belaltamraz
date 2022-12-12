@@ -56,12 +56,14 @@ figcaption {
 }
 
 #lit div {
+    padding: 50px;
     max-width: 100%;
     columns: 40rem;
     color: black;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:"Bebas Neue" ;
     border: 5px solid;
-    background-color:aquamarine;
+    background-color:gray;
+    font-size: 35px;
 }
 
 #contact {
@@ -86,8 +88,11 @@ figcaption {
     color: black;
     margin-left: 0.5ex;
     margin-right: 0.5ex;
-    border: 3px;
+    border: 10px solid;
     color:black;
+    padding-left: 50px ;
+    padding-right: 50px;
+
 }
 
 
@@ -157,8 +162,41 @@ img {
     #photogallery figure figcaption {
         align-self: center;
     }
+    .pic1 img{
+        transition: 1000ms ease;
+        }
+        
+        .pic1 img:hover{
+        -webkit-transform: scale(1.4);
+        -ms-transform: scale(1.4);
+        transform: scale(1.4);
+        transition: 1000ms ease;
+        }
+    
+        .pic2 img{
+            transition: 1000ms ease;
+        }
+        
+        .pic2 img:hover{
+            -webkit-transform: scale(1.4);
+            -ms-transform: scale(1.4);
+            transform: scale(1.4);
+            transition: 1000ms ease;
+        }
+    
+        .pic3 img{
+            transition: 1000ms ease;
+        }
+        
+        .pic3 img:hover{
+            -webkit-transform: scale(1.4);
+            -ms-transform: scale(1.4);
+            transform: scale(1.4);
+            transition: 1000ms ease;
+        }
+       
+    }
 
-}
 
 
 @media screen and (min-width: 1230px) {
