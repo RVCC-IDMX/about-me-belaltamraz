@@ -6,7 +6,7 @@ Belal Tamraz
 
 Save 
 
-This project was the first ever website I made and I lerned alot from 
+This project was the first ever website I made and I lerned alot from it. This is my first my time ever even touching code in my life and I just could't understand it. It just looked like a bunch of random word's and number's next each other. To be honest I never started learning much until After thanksgiving break when I started understading How the style.css works and how to give each section An id. Once I leraned that part everything was kind of simple. Everything seemed to start clicking Right away. 
 
 
 
