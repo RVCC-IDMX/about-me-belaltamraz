@@ -167,11 +167,16 @@ such that no text wraps
     display: block;
 }
 
-#nav_checkbox:checked ~ label.nav_toggle.close {
+.close {
+    display:none;
+}
+#nav_checkbox:checked ~ .nav_toggle .close {
     display: block;
 }
-
-#nav_checkbox:checked ~ label.nav_toggle.menu {
+.menu{
+    display: block;
+}
+#nav_checkbox:checked ~ .nav_toggle .menu {
     display: none;
 }
 .close {
